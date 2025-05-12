@@ -11,9 +11,9 @@ function App() {
 
       <Layout>
         <Routes>
-        <Route path="./" element={<Home />} />
-        <Route path="./review" element={<Review />} />
-        <Route path="./userprofile" element={<UserProfile />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/review" element={<Review />} />
+        <Route path="/userprofile" element={<UserProfile />} />
         </Routes>
       </Layout>
 
