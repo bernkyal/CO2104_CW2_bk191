@@ -1,4 +1,4 @@
-import { Box, Center, Flex, VStack, Link, Timeline, Separator} from '@chakra-ui/react';
+import { Box, Center, VStack, Link, Timeline} from '@chakra-ui/react';
 
 const Sidebar = () => (
   <Box>

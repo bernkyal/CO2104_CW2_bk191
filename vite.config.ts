@@ -1,14 +1,15 @@
+/// <reference types="node" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
+import { fileURLToPath, URL } from 'url'   // ← pull in Node’s URL helpers
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/CO2104_CW2_bk191/',             // your new base
   plugins: [react()],
-  base: "/CO2104_CW2_bk191",
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'), 
-    },
-  },
+      // map “@/…” → <projectRoot>/src
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
 })

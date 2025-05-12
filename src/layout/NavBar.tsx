@@ -10,7 +10,7 @@ const NavBar = () => (
                 <Button variant="ghost" color="yellow" asChild><a href="/" color="#eee">Home</a></Button>
                 <Button variant="ghost">Map</Button>
                 <Button variant="ghost">Events</Button>
-                <Button variant="ghost" color="yellow" asChild><a href="/review" color="#eee">Reviews</a></Button>
+                <Button variant="ghost" color="yellow" asChild><a href="./review" color="#eee">Reviews</a></Button>
                 <Button variant="ghost">Wishlist</Button>
 
 
@@ -44,8 +44,8 @@ const NavBar = () => (
                                         </Card.Description>
                                     </Card.Body>
                                     <Card.Footer justifyContent="flex-end">
-                                        <Button asChild color="white" variant="outline"><a href="/userprofile">Settings</a></Button>
-                                         <Button asChild color="white" variant="subtle"><a href="/userprofile">Sign Out</a></Button>
+                                        <Button asChild color="white" variant="outline"><a href="./userprofile">Settings</a></Button>
+                                         <Button asChild color="white" variant="subtle"><a href="./userprofile">Sign Out</a></Button>
                                     </Card.Footer>
                                 </Card.Root></Popover.Body>
                             </Popover.Content>
