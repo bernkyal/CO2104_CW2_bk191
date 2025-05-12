@@ -7,7 +7,7 @@ const NavBar = () => (
         <Stack direction="row" align="center" w="100vw" p="2" separator={<StackSeparator />}>
             <Box color="white" fontWeight={'bold'} w="30vw">The Manchester Shopper</Box>
             <HStack flex={1} justify="space-evenly">
-                <Button variant="ghost" color="yellow" asChild><a href="/" color="#eee">Home</a></Button>
+                <Button variant="ghost" color="yellow" asChild><a href="./" color="#eee">Home</a></Button>
                 <Button variant="ghost">Map</Button>
                 <Button variant="ghost">Events</Button>
                 <Button variant="ghost" color="yellow" asChild><a href="./review" color="#eee">Reviews</a></Button>
