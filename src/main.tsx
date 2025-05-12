@@ -8,7 +8,7 @@ import App from './App.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider>
-      <HashRouter basename="/CO2104_CW2_bk191">
+      <HashRouter>
     <App />
     </HashRouter>
     </Provider>

@@ -1,5 +1,6 @@
 import { Box, Stack, StackSeparator, HStack, Avatar } from '@chakra-ui/react'
 import { Button, Popover, Portal, AvatarGroup, Card, Badge } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => (
 
@@ -7,10 +8,10 @@ const NavBar = () => (
         <Stack direction="row" align="center" w="100vw" p="2" separator={<StackSeparator />}>
             <Box color="white" fontWeight={'bold'} w="30vw">The Manchester Shopper</Box>
             <HStack flex={1} justify="space-evenly">
-                <Button variant="ghost" color="yellow" asChild><a href="./" color="#eee">Home</a></Button>
+                <Button variant="ghost" color="yellow" asChild><Link to="/">Home</Link></Button>
                 <Button variant="ghost">Map</Button>
                 <Button variant="ghost">Events</Button>
-                <Button variant="ghost" color="yellow" asChild><a href="./review" color="#eee">Reviews</a></Button>
+                <Button variant="ghost" color="yellow" asChild><Link to="review">Reviews</Link></Button>
                 <Button variant="ghost">Wishlist</Button>
 
 
@@ -44,7 +45,7 @@ const NavBar = () => (
                                         </Card.Description>
                                     </Card.Body>
                                     <Card.Footer justifyContent="flex-end">
-                                        <Button asChild color="white" variant="outline"><a href="./userprofile">Settings</a></Button>
+                                        <Button asChild color="white" variant="outline"><Link to="userprofile">Settings</Link></Button>
                                          <Button asChild color="white" variant="subtle"><a href="./userprofile">Sign Out</a></Button>
                                     </Card.Footer>
                                 </Card.Root></Popover.Body>

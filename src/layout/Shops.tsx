@@ -106,7 +106,7 @@ const Shop = () => {
           ) : ( 
 
 
-          <Card.Root h="100vh" flexDirection="row" overflow="hidden" maxW="xl">
+          <Card.Root h="100vh" flexDirection="row" overflow="hidden">
             <Image
               objectFit="cover"
               maxW="20vw"

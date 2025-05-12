@@ -9,13 +9,22 @@ function App() {
 
   return (
 
-      <Layout>
-        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/review" element={<Review />} />
-        <Route path="/userprofile" element={<UserProfile />} />
-        </Routes>
-      </Layout>
+      <Routes>
+      {/* 
+        Parent route renders your Layout (NavBar + Footer + an <Outlet/> for children)
+        at path="/". 
+      */}
+      <Route path="/" element={<Layout />}>
+        {/* index = matches exactly "#/" */}
+        <Route index element={<Home />} />
+
+        {/* matches "#/review" */}
+        <Route path="review" element={<Review />} />
+
+        {/* matches "#/userprofile" */}
+        <Route path="userprofile" element={<UserProfile />} />
+      </Route>
+    </Routes>
 
   )
 }
